@@ -26,7 +26,7 @@ const ProductModal = ({ selectedData, setModal }) => {
               </div>
               <div className="col-span-12 md:col-span-6 flex flex-col justify-between gap-5">
                 <div className="flex flex-col justify-between gap-5">
-                  <h3 className="capitalize text-xl font-semibold mt-5 md:mt-0">
+                  <h3 className="capitalize text-xl font-semibold mt-5 md:mt-0 lg:max-w-sm md:max-w-7xl">
                     {selectedData.title}
                   </h3>
                   <p className="capitalize text-sm md:text-base text-gray-500">
@@ -54,7 +54,7 @@ const ProductModal = ({ selectedData, setModal }) => {
           </div>
         </div>
         <button
-          className="absolute top-[92px] md:top-32 right-[45%] lg:right-10 xl:right-32"
+          className="absolute top-[92px] md:top-32 right-[45%] lg:right-5 xl:right-32"
           onClick={() => setModal(false)}
         >
           <span className="text-xl  px-3 rounded-full text-white bg-red-500 py-1">
@@ -62,6 +62,16 @@ const ProductModal = ({ selectedData, setModal }) => {
           </span>
         </button>
       </div>
+
+      <style>
+        {`
+          @media (max-width: 1024px) {
+            .fixed.inset-0.z-10.overflow-y-auto {
+              padding-top: 80px;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };

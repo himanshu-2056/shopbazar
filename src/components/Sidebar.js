@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 
 import { FiTrash2 } from "react-icons/fi";
 
@@ -19,14 +18,13 @@ const Sidebar = () => {
     >
       <div className="flex items-center justify-between py-6 border-b">
         <div className="uppercase text-sm font-semibold">
-          {" "}
           Shopping Bag ({itemAmount})
         </div>
         <div onClick={() => handleClose()}>
           <FiArrowRight className="h-6 w-6 cursor-pointer" />
         </div>
       </div>
-      <div className="flex flex-col gap-y-2 h-[520px] lg:h-[700px] scrollbar overflow-y-auto overflow-x-hidden border-b ">
+      <div className="flex flex-col gap-y-2 h-[520px] lg:h-[440px] xl:h-[700px] scrollbar overflow-y-auto overflow-x-hidden border-b ">
         {cart.map((cart, index) => {
           return <CartItem cart={cart} index={index} />;
         })}
