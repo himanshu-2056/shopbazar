@@ -65,7 +65,7 @@ const navigation = [
 export default function Footer() {
   return (
     <footer className="bg-black">
-      <div className="mx-auto max-w-7xl px-5 py-5 md:flex md:items-center md:justify-between">
+      <div className="mx-auto max-w-6xl px-5 py-5 md:flex md:items-center md:justify-between">
         <div className="mt-8 md:mt-0">
           <p className="text-center  text-white font-light tracking-wide">
             &copy; 2023 ShopBazaar, Inc. All rights reserved.

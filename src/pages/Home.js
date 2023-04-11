@@ -12,13 +12,13 @@ const Home = () => {
 
   return (
     <div>
-      <section className="bg-green-100 h-screen pt-20">
-        <div className="max-w-7xl mx-auto px-5">
+      <section className="bg-green-100  py-20">
+        <div className="max-w-6xl mx-auto px-5">
           <Hero />
         </div>
       </section>
       <section className="my-5">
-        <div className="max-w-7xl mx-auto px-5 py-12 shadow-lg bg-gray-50">
+        <div className="max-w-6xl mx-auto px-5 py-12 shadow-lg bg-gray-50">
           <div className="h-full  flex flex-col md:flex-row justify-between items-center gap-10">
             {shippingDetails.map((details, index) => {
               return (
@@ -40,7 +40,7 @@ const Home = () => {
         </div>
       </section>
       <section className="py-10">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5">
           <h1 className="py-10 text-4xl font-semibold">Categories</h1>
           <div className="flex flex-col md:flex-row justify-between gap-5 relative">
             {categories.map((category) => {
@@ -51,7 +51,7 @@ const Home = () => {
       </section>
 
       <section className="py-10">
-        <div className="max-w-7xl mx-auto px-5">
+        <div className="max-w-6xl mx-auto px-5">
           <h1 className="py-10 text-4xl font-semibold">Products</h1>
           <div className="grid grid-cols-12 md:gap-10">
             {products.map((product) => {

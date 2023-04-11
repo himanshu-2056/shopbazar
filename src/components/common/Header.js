@@ -10,7 +10,7 @@ const Header = () => {
   const { itemAmount } = useContext(CartContext);
   return (
     <div className=" bg-green-100 fixed top-0 w-full z-20 shadow-md">
-      <div className="max-w-7xl mx-auto px-5 flex justify-between items-center py-5">
+      <div className="max-w-6xl mx-auto px-5 flex justify-between items-center py-5">
         <Link to={"/"}>
           <img src={logo} className="h-10" alt="" />
         </Link>
@@ -18,8 +18,8 @@ const Header = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"
         >
-          <BsBag className="text-3xl mx-2 lg:mx-0" />
-          <div className="bg-red-500 absolute left-[36px] md:left-[38px] lg:left-[32px] -top-3 lg:-top-1 text-xs px-2 py-1 text-white rounded-full flex justify-center items-center">
+          <BsBag className="text-3xl mx-2 xl:mx-0" />
+          <div className="bg-red-500 absolute left-[36px] md:left-[32px] lg:left-[40px] xl:left-[32px] -top-3 lg:-top-1 text-xs px-2 py-1 text-white rounded-full flex justify-center items-center">
             {itemAmount}
           </div>
         </div>

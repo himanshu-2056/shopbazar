@@ -25,7 +25,7 @@ const Hero = () => {
               <div className="col-span-12 md:col-span-6">
                 <img
                   src={elem.image}
-                  className="h-[30rem] md:h-[40rem] object-cover"
+                  className="h-[30rem] md:h-[27rem] lg:[35rem]  object-cover"
                   alt="bannerImage"
                 />
               </div>
