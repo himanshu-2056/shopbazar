@@ -19,19 +19,16 @@ const Home = () => {
       </section>
       <section className="my-5">
         <div className="max-w-6xl mx-auto px-5 py-12 shadow-lg bg-gray-50">
-          <div className="h-full  flex flex-col md:flex-row justify-between items-center gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
             {shippingDetails.map((details, index) => {
               return (
-                <div
-                  key={index}
-                  className="grid grid-cols-4 justify-items-center"
-                >
-                  <div className="col-span-2">
+                <div key={index} className="flex items-center space-x-4">
+                  <div className="w-10 h-10 flex-shrink-0">
                     <i>{details.icon}</i>
                   </div>
-                  <div className="col-span-2 flex flex-col space-y-1">
+                  <div>
                     <h1 className="text-sm font-bold">{details.heading}</h1>
-                    <p className="text-sm text-gray-400">{details.desc}</p>
+                    <p className="text-xs text-gray-400">{details.desc}</p>
                   </div>
                 </div>
               );
@@ -39,6 +36,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section className="py-10">
         <div className="max-w-6xl mx-auto px-5">
           <h1 className="py-10 text-4xl font-semibold">Categories</h1>
